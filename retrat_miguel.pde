@@ -1,0 +1,65 @@
+int m=15;
+void setup(){
+  size(300,300);
+  strokeWeight(2);
+  noFill();
+ }
+void draw (){
+ rectMode(CENTER);
+ translate(width/2,height/2);
+//cap
+  rect(0,0,m*10,m*10,0,0,m*8,m*8);
+  //cabell
+  line(-m*5,-m*5,-m*4,-m*7);
+  line(-m*4,-m*5,-m*3,-m*7);
+  line(-m*3,-m*5,-m*2,-m*7);
+  line(-m*2,-m*5,-m*1,-m*7);
+  line(-m*1,-m*5,0,-m*7);
+  line(0,-m*5,m,-m*7);
+  line(m,-m*5,m*2,-m*7);
+  line(2*m,-m*5,m*3,-m*7);
+  line(3*m,-m*5,m*4,-m*7);
+  line(4*m,-m*5,m*5,-m*7);
+  line(5*m,-m*5,m*6,-m*7);
+//celles
+  arc(-m*2,-m*2,m*3,m*3,radians(220),radians(320));
+  arc(m*2,-m*2,m*3,m*3,radians(220),radians(320));
+//ulls
+  circle(-2*m,-2*m,30);
+  circle(-2*m,-2*m,10);
+  circle(2*m,-2*m,30);
+  circle(2*m,-2*m,10);
+  //orelles
+  arc(-m*5,-m*2,m*2,m*3,radians(90),radians(270));
+  arc(m*5,-m*2,m*2,m*3,radians(-90),radians(90));
+//nas
+  line(0,-m*2,m,m*2);
+  line(m,m*2,0,m*2);
+//boca  
+   line(-m*2,m*2,-m,m*3);
+   line(-m,m*3,m,m*3);
+   line(m,m*3,m*2,m*2);
+//barba
+   point(m*3,m*2);
+   point(m*4,m*2);
+   point(-m,m*2);
+   point(-m*4,m*2);
+   point(-m*3,m*2);
+   point(-m*3,m*4);
+   point(-m*3,m*4);
+   point(-m*3,m*3);
+   point(-m*4,m*3);
+   point(-m*4,m);
+   point(m*4,m);
+   point(m*4,m*3);
+   point(m*3,m*3);
+   point(m*3,m*4);
+   point(m*3,m*4);
+   point(m,m*4);
+   point(0,m*4);
+   point(-m*2,m*3);
+   point(-m*2,m*4);
+   point(-m,m*4);
+   point(m*2,m*4);
+   point(m*2,m*3);
+}
